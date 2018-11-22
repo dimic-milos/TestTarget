@@ -13,6 +13,11 @@
 		742C4A1E21A6807200FA41BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 742C4A1D21A6807200FA41BA /* Assets.xcassets */; };
 		742C4A2121A6807200FA41BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 742C4A1F21A6807200FA41BA /* LaunchScreen.storyboard */; };
 		742C4A2C21A6807200FA41BA /* TestTargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C4A2B21A6807200FA41BA /* TestTargetTests.swift */; };
+		742C4A3921A682B400FA41BA /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C4A3821A682B400FA41BA /* StoryboardViewController.swift */; };
+		742C4A3D21A6830100FA41BA /* StoryboardViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C4A3C21A6830100FA41BA /* StoryboardViewControllerTests.swift */; };
+		742C4A4121A683A100FA41BA /* XibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C4A3F21A683A100FA41BA /* XibViewController.swift */; };
+		742C4A4221A683A100FA41BA /* XibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 742C4A4021A683A100FA41BA /* XibViewController.xib */; };
+		742C4A4521A6847200FA41BA /* XibViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C4A4421A6847200FA41BA /* XibViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		742C4A2721A6807200FA41BA /* TestTargetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTargetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		742C4A2B21A6807200FA41BA /* TestTargetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTargetTests.swift; sourceTree = "<group>"; };
 		742C4A2D21A6807200FA41BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		742C4A3821A682B400FA41BA /* StoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
+		742C4A3C21A6830100FA41BA /* StoryboardViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewControllerTests.swift; sourceTree = "<group>"; };
+		742C4A3F21A683A100FA41BA /* XibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibViewController.swift; sourceTree = "<group>"; };
+		742C4A4021A683A100FA41BA /* XibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibViewController.xib; sourceTree = "<group>"; };
+		742C4A4421A6847200FA41BA /* XibViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 		742C4A1521A6806F00FA41BA /* TestTarget */ = {
 			isa = PBXGroup;
 			children = (
+				742C4A3621A6828600FA41BA /* ViewControllers */,
 				742C4A1621A6806F00FA41BA /* AppDelegate.swift */,
 				742C4A1821A6806F00FA41BA /* ViewController.swift */,
 				742C4A1A21A6806F00FA41BA /* Main.storyboard */,
@@ -90,10 +101,62 @@
 		742C4A2A21A6807200FA41BA /* TestTargetTests */ = {
 			isa = PBXGroup;
 			children = (
+				742C4A3A21A682E100FA41BA /* ViewController */,
 				742C4A2B21A6807200FA41BA /* TestTargetTests.swift */,
 				742C4A2D21A6807200FA41BA /* Info.plist */,
 			);
 			path = TestTargetTests;
+			sourceTree = "<group>";
+		};
+		742C4A3621A6828600FA41BA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				742C4A3E21A6838500FA41BA /* XibViewController */,
+				742C4A3721A6829500FA41BA /* StoryboardViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		742C4A3721A6829500FA41BA /* StoryboardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				742C4A3821A682B400FA41BA /* StoryboardViewController.swift */,
+			);
+			path = StoryboardViewController;
+			sourceTree = "<group>";
+		};
+		742C4A3A21A682E100FA41BA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				742C4A3B21A682EC00FA41BA /* StoryboardViewController */,
+				742C4A4321A6845A00FA41BA /* XibViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		742C4A3B21A682EC00FA41BA /* StoryboardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				742C4A3C21A6830100FA41BA /* StoryboardViewControllerTests.swift */,
+			);
+			path = StoryboardViewController;
+			sourceTree = "<group>";
+		};
+		742C4A3E21A6838500FA41BA /* XibViewController */ = {
+			isa = PBXGroup;
+			children = (
+				742C4A3F21A683A100FA41BA /* XibViewController.swift */,
+				742C4A4021A683A100FA41BA /* XibViewController.xib */,
+			);
+			path = XibViewController;
+			sourceTree = "<group>";
+		};
+		742C4A4321A6845A00FA41BA /* XibViewController */ = {
+			isa = PBXGroup;
+			children = (
+				742C4A4421A6847200FA41BA /* XibViewControllerTests.swift */,
+			);
+			path = XibViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742C4A4221A683A100FA41BA /* XibViewController.xib in Resources */,
 				742C4A2121A6807200FA41BA /* LaunchScreen.storyboard in Resources */,
 				742C4A1E21A6807200FA41BA /* Assets.xcassets in Resources */,
 				742C4A1C21A6806F00FA41BA /* Main.storyboard in Resources */,
@@ -197,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742C4A4121A683A100FA41BA /* XibViewController.swift in Sources */,
 				742C4A1921A6806F00FA41BA /* ViewController.swift in Sources */,
+				742C4A3921A682B400FA41BA /* StoryboardViewController.swift in Sources */,
 				742C4A1721A6806F00FA41BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742C4A4521A6847200FA41BA /* XibViewControllerTests.swift in Sources */,
 				742C4A2C21A6807200FA41BA /* TestTargetTests.swift in Sources */,
+				742C4A3D21A6830100FA41BA /* StoryboardViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StoryboardViewController.swift
 //  TestTarget
 //
 //  Created by Milos Dimic on 11/22/18.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StoryboardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
     }
-}
 
+}
